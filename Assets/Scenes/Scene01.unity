@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 228869716}
   - component: {fileID: 228869715}
   - component: {fileID: 228869714}
+  - component: {fileID: 228869718}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -223,6 +224,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &228869718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228869713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2f9a0f1a2471b439ae4cdb8e3cb267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::button
 --- !u!4 &289764965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4748617171605517181, guid: 58ea64f7db4fe9c43828adb063c07217, type: 3}
@@ -264,8 +277,8 @@ Camera:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.93844986, g: 0, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1210,8 +1223,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+    rgba: 4289150519
+  m_fontColor: {r: 0.2159724, g: 0.24455605, b: 0.654088, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1675,7 +1688,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1722969411}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 228869718}
+        m_TargetAssemblyTypeName: button, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1722969411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2121,7 +2146,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2076719238}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 228869718}
+        m_TargetAssemblyTypeName: button, Assembly-CSharp
+        m_MethodName: BacktoMainmenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2076719238
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -20,4 +20,19 @@ public class button : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
     }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Scene01");
+    }
+
+    public void BacktoMainmenu()
+    {
+        SceneManager.LoadScene("Mainmenu");
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
